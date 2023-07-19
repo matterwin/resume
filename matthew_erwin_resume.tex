@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://matthewderwin.com/}{\Large Matthew Erwin}} & {Email : matthewderwin23@gmail.com}\\
+  \href{https://matthewderwin.com/}{https://matthewderwin.com} & GitHub : \href{https://github.com/matterwin}{https://github.com/matterwin} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Louisiana State University}{Baton Rouge, LA}
+      {Bachelor of Science in Computer Science, Minor in Mathematics GPA: 4.00}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {General Dynamics Information Technology}{Remote}
+      {Software Engineer I (Part-time/Intern)}{Nov. 2022 - Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{FAFSA}
+          {Served as a backend developer and gained practical experience with Java by programming pieces of the REST API for the Free Application for Federal Student Aid (FAFSA)}
+          \resumeItem{Version Control}
+          {Proficiently employed version control systems, including GitLab and Git, to facilitate seamless collaboration within the development and testing team}
+        \resumeItem{API Testing}
+          {Championed software quality assurance through the development of robust JUnit tests, validating the functionality of my code and the code of fellow engineers}
+          \resumeItem{Database}
+          {Demonstrated bi-weekly functionality of user stories to clients using PgAdmin and PostgreSQL queries}
+          \resumeItem{SAFe}
+          {Practiced SAFe Agile methodologies by following user stories and features and utilized communication platforms such as Confluence and Jira to track progress}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Chevron}{Covington, LA}
+      {Cloud Engineer Intern}{May 2023 - Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Splunk}
+          {Developed sophisticated Splunk dashboards and alerts using SPL and designed visuals using XML, HTML, CSS, and JavaScript that served as template boards for Chevron's BUs}
+        \resumeItem{OT Automation}
+          {Utilized Ansible Tower to orchestrate and automate infrastructure tasks for an early-in-the-works project, leveraging Ansible playbooks and Docker for other containerization tasks}
+          \resumeItem{Competency Pathways}
+          {Interacted with Degreed's RESTful API and frontend to create multiple competency pathways for future Chevron Network Engineers using Postman and Degreed's GUI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {General Dynamics Information Technology}{Remote}
+      {Software Developer Intern}{June 2022 - Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{AWS CI/CD}
+          {Created a full end-to-end automated pipeline using AWS Code* services, along with AWS Blue/Green deployment}
+        \resumeItem{Containers}
+          {Worked on small frontend coding projects and containerized such projects by building images and containers through Docker and Docker Hub}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/matterwin/CSC4402-Spring23}{Movie Review | \textnormal{\textit{React, Typescript, Rust, CSS, NodeJS, ExpressJS, MySQL}}}}{% Move the \vspace here
+        \vspace{-7pt}
+        \begin{itemize} % Add this line to start the bullet points
+            \item Designed and coded a React \& Express full-stack web app for users to read and write movie reviews \vspace{-2pt}
+            \item Implemented MySQL to dynamically store all movie and user information
+        \end{itemize}
+    }
+    \resumeSubItem{\href{https://github.com/matterwin/DSA-Visual}{DSA Visualization | \textnormal{\textit{React, JavaScript, MongoDB, NodeJS, ExpressJS, MaterialUI, CSS}}}}{% Move the \vspace here
+        \vspace{-7pt}
+        \begin{itemize}
+            \item Programmed data structures and algorithms visualizations within a full-stack web app \vspace{-2pt}
+            \item Constructed a chat feature for users to ask questions live and asynchronously \vspace{-2pt}
+            \item Minimized security risks of the REST API by using JWT inside session cookies
+        \end{itemize}
+    }
+    \resumeSubItem{\href{https://github.com/matterwin/csc3380}{Fit Happens | \textnormal{\textit{React, JavaScript, MSSQL, ASP.Net Core, Apache}}}}{% Move the \vspace here
+        \vspace{-7pt}
+        \begin{itemize}
+            \item Collaborated with team members to assemble a full-stack workout web application\vspace{-2pt}
+            \item Deployed using Apache Web Server and AWS EC2 instance
+        \end{itemize}
+    }
+\resumeSubHeadingListEnd
+
+
+
+
+%--------Extra------------
+\section{Leadership and Honors}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Leadership}{: Society of Peer Mentors | Chevron Leadership Academy }
+      \hfill
+    }\vspace{-7pt}
+    \item{
+      \textbf{Honors}{: Geaux Engineering 1st Place 2022 | AWS Cloud Practitioner 2021 | SAFe 6 Practitioner 2023 | Chevron Energy Leaders Scholarship 2022 | Great American Rivalry Scholarship 2020}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
