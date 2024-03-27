@@ -1,0 +1,193 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Matthew Erwin}
+   & \\
+   {matthewderwin23@gmail.com}\phantom{} & \href{https://github.com/matterwin}{github.com/matterwin}\phantom{}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Louisiana State University}{Baton Rouge, LA}
+      {Bachelor of Science in Computer Science, Minor in Mathematics GPA: 3.93}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+  
+%--------Extra------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Java, C/C++, Python, JavaScript, TypeScript, SQL (Postgres), HTML/CSS }
+      \hfill
+    }\vspace{-7pt}
+    \item{
+      \textbf{Frameworks}{: React, Node, Express, React Native, Redux, JUnit, Spring }
+    }\vspace{-7pt}
+    \item{
+      \textbf{Developer Tools}{: Git, GitLab, Docker, AWS, Azure, Postman, Splunk, Figma, Jira }
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+	\resumeSubheading
+      {Chevron}{Covington, LA}
+      {Cloud Engineer Intern}{May 2023 - Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Splunk}
+          {Developed sophisticated Splunk dashboards and alerts using SPL and designed visuals using XML, HTML, CSS, and JavaScript that served as template boards for Chevron's BUs}
+        \resumeItem{OT Automation}
+          {Utilized Ansible Tower to orchestrate and automate infrastructure tasks for an early-in-the-works project, leveraging Ansible playbooks and Docker for other containerization tasks}
+          \resumeItem{Competency Pathways}
+          {Interacted with Degreed's RESTful API and frontend to create multiple competency pathways for future Chevron Network Engineers using Postman and Degreed's GUI}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {General Dynamics Information Technology}{Remote}
+      {Software Engineer I (Part-time/Intern)}{Nov. 2022 - Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{FSA}
+          {Served as a backend developer and gained practical experience with Java by programming pieces of the REST API for the Federal Student Aid Processing System}
+          \resumeItem{Version Control}
+          {Proficiently employed version control systems, including GitLab and Git, to facilitate seamless collaboration within the development and testing team}
+        \resumeItem{API Testing}
+          {Championed software quality assurance through the development of robust JUnit tests, validating the functionality of my code and the code of fellow engineers}
+          \resumeItem{Database}
+          {Demonstrated bi-weekly functionality of user stories to clients using PgAdmin and PostgreSQL queries}
+          \resumeItem{SAFe}
+          {Practiced SAFe Agile methodologies by following user stories and features and utilized communication platforms such as Confluence and Jira to track progress}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {General Dynamics Information Technology}{Remote}
+      {Software Developer Intern}{June 2022 - Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{AWS CI/CD}
+          {Created full end-to-end automated pipelines via AWS CodeStar \& AWS Blue/Green deployment}
+        \resumeItem{Containers}
+          {Worked on small frontend coding projects and containerized such projects by building images and containers through Docker and Docker Hub}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/matterwin/csc4330}{SocialEyes Mobile App $\vert$ \textnormal{\textit{MongoDB, Express, React-Native, Redux, Typescript, Figma}}}}{% Move the \vspace here
+        \vspace{-7pt}
+        \begin{itemize}
+                  \item Developed a minimum viable product (MVP) for a social media app to showcase to investors
+                  \item Showcases user-generated event feeds, enabling others to view and receive invitations through our connection system
+            \item Project entailed practice of software development lifecycle from Figma design to MVP and monetization\vspace{-2pt}
+        \end{itemize}
+    }
+            \resumeSubItem{\href{https://github.com/matterwin/crawfish_shrimp_app}{Crawfish Price App $\vert$ \textnormal{\textit{React-Native, Spring, PostgreSQL, Firebase, Google Place API}}}}{% Move the \vspace here
+        \vspace{-7pt}
+        \begin{itemize}
+            \item Work-in-progress mobile app for tracking crawfish and shrimp prices via crowd-sourcing and scraping \vspace{-2pt}
+            \item Utilized external APIs like Google Places API to autocomplete and query distances from user to vendor \vspace{-2pt}
+            \item In progress of developing map feature of visualizing vendors through using Google Maps API\vspace{-2pt}
+        \end{itemize}
+        \resumeSubItem{\href{https://github.com/matterwin/CSC4402-Spring23}{Movie Review Web Application $\vert$ \textnormal{\textit{React, Typescript, Rust, Node, Express, MySQL}}}}{% Move the \vspace here
+        \vspace{-7pt}
+        \begin{itemize} % Add this line to start the bullet points
+            \item Full stack web application for users to read and write movie reviews \vspace{-2pt}
+            \item Enabled users to search for movies and give ratings to what they've seen
+        \end{itemize}
+    }
+    }
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
